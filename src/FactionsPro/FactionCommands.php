@@ -126,7 +126,7 @@ class FactionCommands {
                             $sender->sendMessage($this->plugin->formatMessage("Usage: /f create <faction name>"));
                             return true;
                         }
-                        if (!(ctype_alnum($args[1]))) {
+                        if (!isset($args[1]))) {
                             $sender->sendMessage($this->plugin->formatMessage("You may only use letters and numbers"));
                             return true;
                         }
